@@ -1,0 +1,108 @@
+@import url(./reset.css);
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Bright-blue1: hsl(245, 58%, 58%);
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+@font-face {
+    font-family: 'redhat';
+    src: url(./font/RedHatDisplay-VariableFont_wght.ttf);
+}
+body{
+    font-family: 'redhat';
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 20rem;
+    min-height: 30rem;    
+    border-radius: 10px;
+    background-color: white;
+
+}
+.summary{
+    padding: 0 2rem;
+    text-align: center;
+}
+h1{
+    font-size: 1.36rem;
+    font-weight: 1000;
+    padding: 1.9rem 0 0.5rem
+}
+.guy{
+    border-radius: 10px 10px 0 0 ;
+    height: 100%;
+}
+.para{
+    font-size: 0.8rem;
+    color: var(--Desaturatedblue);
+    font-weight: 500;
+}
+.music-section{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.8rem;
+    img{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    p{
+        font-weight: 500;
+        color: var(--Desaturatedblue);
+    }
+}
+.change-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Verypaleblue);
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin: 1rem 0;
+    align-items: center;
+    a{
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--Bright-blue);
+    }
+}
+.change:hover{
+    text-decoration: none;
+    color: var(--Bright-blue1);
+}
+.payment{
+    margin: 1.3rem 0 0;
+    background-color: var(--Bright-blue);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 650;
+    cursor: pointer;
+}
+.payment:hover{
+    background-color:var(--Bright-blue1);
+}
+.cancel{
+    font-size: 0.8rem;
+    color: var(--Desaturatedblue);
+    font-weight: 900;
+    line-height: 3rem;
+    text-decoration: none;
+}
+.cancel:hover{
+    color: var(--Dark-blue);
+}
